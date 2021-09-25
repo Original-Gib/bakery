@@ -1,0 +1,48 @@
+body {
+    background-color: #F172a1;
+    color: #f0ebf4;
+}
+
+img.medium{
+    height: 500px;
+    width: auto;
+    border-radius: 15px;
+    display: inline-flex;
+    margin: 1em;
+}
+
+.small{
+    height: 6em;
+    padding-bottom: 10px;
+}
+
+
+.container{
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.text{
+    padding: 3rem;
+    background-color: #b39bc8;
+    border-radius: 15px;
+}
+
+div{
+    padding: 1rem;
+    border-radius: 15px;
+}
+
+@media (max-width: 992px){
+.container{
+    display: flex;
+    flex-direction: column;
+}
+
+}
+
+
+
+
+
