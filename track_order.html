@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstap Styles -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="index_style.css">
+
+    <title>The Bakery</title>
+</head>
+
+<body>
+
+    <nav id="mainNavbar" class="navbar navbar-dark bg-none navbar-expand-md sticky-top py-0">
+        <a href="" class="navbar-brand">THE BAKERY</a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navLinks" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navLinks">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link " href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link active " href="#">Track My Order</a></li>
+                <li class="nav-item"><a class="nav-link " href="place_order.html">Place An Order</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="bannerImage">
+        <!-- <img src="imgs/donut.jpg" alt="donut with sprinkles" class="img-fluid"> -->
+    </div>
+
+    <div class="map">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d4103.247627259901!2d-6.283427743668069!3d53.31158806691265!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sie!4v1632674141128!5m2!1sen!2sie"
+            width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+    </div>
+
+    <footer class="row align-items-center justify-content-center">
+
+        <button type="button" class="alert sub">Subscribe to Newletter</a>
+
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+
+    <script>
+        $(function () {
+            $(document).scroll(function () {
+                var $nav = $("#mainNavbar");
+                $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+            });
+        });
+    </script>
+
+</body>
+
+</html>

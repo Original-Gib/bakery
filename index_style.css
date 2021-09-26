@@ -30,10 +30,10 @@ img.medium{
     color: #f0ebf4;
 }
 
-div{
+/* div{
     padding: 1rem;
     border-radius: 15px;
-}
+} */
 
 .sub:hover{
     cursor: pointer;
@@ -48,6 +48,20 @@ div{
 
 .navOption{
     color: red;
+}
+
+div.map{
+    display: flexbox;
+    justify-content: center;
+    align-items: center;
+}
+
+.bannerImage{
+    width: 100%;
+    background-image: url(imgs/donut.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 405px;
 }
 
 @media (max-width: 992px){
