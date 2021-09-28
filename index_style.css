@@ -4,6 +4,8 @@ body {
     
 }
 
+/* Image classes used to the superscript images over the text and forms (small) and also for the images on the main page (medium) */
+
 img.medium{
     height: 500px;
     width: auto;
@@ -12,11 +14,12 @@ img.medium{
     margin: 1em;
 }
 
-.small{
+img.small{
     height: 6rem;
     padding-bottom: 10px;
 }
 
+/* Styling for the text elements on the main page */
 
 .container{
     display: flex;
@@ -31,7 +34,7 @@ img.medium{
     
 }
 
-
+/* Styling for the 'Subscribe to Newletter button on all pages */
 
 .sub:hover{
     cursor: pointer;
@@ -39,19 +42,24 @@ img.medium{
     transition: background-color 500ms ease-in-out;
 }
 
+/* Scrolled class for Javascript function to alter the navbar when scolling past the nav height */
+
 .navbar.scrolled {
     background: #BCB3F7;
     transition: background 250ms;
 }
+
+/* Div on order tracking page which contains a banner image */
 
 .bannerImage{
     width: 100%;
     background-image: url(imgs/donut.jpg);
     background-position: center;
     background-size: cover;
-    backdrop-filter: blur(5px);
     height: 405px;
 }
+
+/* blur styling for the div inside the banner image div */
 
 .blur{
     background: rgba(255, 255, 255, 0.2);
@@ -63,6 +71,8 @@ img.medium{
     justify-content: center;
     align-items: center;
 }
+
+/* styling for the form within the blured div, within the bannerImage div */
 
 form{
     display: flex;
@@ -93,6 +103,8 @@ input::-webkit-inner-spin-button {
   margin: 0;
 }
 
+/* styling on the button within the order tracking form -- same styling should be used for the place order form when this is being created, for 'changed my mind button' have the color fade from the oposite side and be a pastel red color  */
+
 button[type="submit"]{
     background-color: #EFEFEF;
     background: linear-gradient(to left, #EFEFEF 50%, #B3F7DE 50%) right;
@@ -114,8 +126,7 @@ button[type="submit"]:focus{
     outline: none;
 }
 
-
-
+/* Styling for making the iframe responsive -- to center align an iframe you must have text-align: center; in the parent element */
 
 div.map{
     text-align: center;
@@ -136,6 +147,8 @@ iframe{
     height: 100%;
     border-radius: 5px;
 }
+
+/* media query to reformat the main page to display in columns when below 992px */
 
 @media (max-width: 992px){
 .container{
