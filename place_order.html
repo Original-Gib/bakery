@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="index_style.css">
+    <link rel="stylesheet" href="style.css">
 
     <title>The Bakery</title>
 </head>
@@ -31,6 +31,66 @@
         </div>
     </nav>
 
+
+    <div class="tableImage">
+        <div class="tableBlur">
+            <table>
+                <tr>
+                    <th>Bake</th>
+                    <th>Minimum Order</th>
+                    <th>Price Per Item</th>
+                </tr>
+                <tr>
+                    <td>Cupcakes</td>
+                    <td>6</td>
+                    <td>€4</td>
+                </tr>
+                <tr>
+                    <td>Cinnamon Swirls</td>
+                    <td>6</td>
+                    <td>€5</td>
+                </tr>
+                <tr>
+                    <td>Donuts</td>
+                    <td>12</td>
+                    <td>€3</td>
+                </tr>
+                <tr>
+                    <td>Occassion Cake</td>
+                    <td>Made to order</td>
+                    <td>Pricing may very, please call for quote</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <div class="orderArea">
+        <div>
+            <form class="orderForm">
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" name="firstName" placeholder="First Name" required>
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" name="lastName" placeholder="Last Name" required>
+                <label for="telNum">Telephone Number:</label>
+                <input type="tel" id="telNum" name="telNum" placeholder="0861234567" required>
+                <label for="item">Select your item:</label>
+                <select id="item" name="item" required>
+                    <option value="cupcakes">Cupcakes</option>
+                    <option value="cinnamonSwirl">Cinnamon Swirls</option>
+                    <option value="donuts">Donuts</option>
+                </select>
+                <label for="quantity">Quantity</label>
+                <input type="number" id="quantity" name="quantity" placeholder="Quantity" min="6" required>
+                <div class="formButtons">
+                    <button type="submit">Place My Order</button>
+                    <button type="reset">I've Changed My Mind</button>
+                </div>
+            </form>
+        </div>
+        <div>
+            <img src="imgs/baker.jpg" alt="Baker" class="medium">
+        </div>
+    </div>
 
 
 

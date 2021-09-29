@@ -1,0 +1,261 @@
+
+body {
+    background-color: #f7b3cc;
+    
+}
+
+/* Image classes used to the superscript images over the text and forms (small) and also for the images on the main page (medium) */
+
+img.medium{
+    height: 500px;
+    width: auto;
+    border-radius: 15px;
+    display: inline-flex;
+    margin: 1em;
+}
+
+img.small{
+    height: 6rem;
+    padding-bottom: 10px;
+}
+
+/* Styling for the text elements on the main page */
+
+.container{
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.text{
+    padding: 3rem;
+    background-color: #B3F7DE;
+    border-radius: 15px;
+    
+}
+
+/* Styling for the 'Subscribe to Newletter button on all pages */
+
+.sub:hover{
+    cursor: pointer;
+    background-color: #EEF7B3;
+    transition: background-color 500ms ease-in-out;
+}
+
+.sub:focus{
+    border: none;
+    transform: scale(0.9, 0.9);
+}
+
+/* Scrolled class for Javascript function to alter the navbar when scolling past the nav height */
+
+.navbar.scrolled {
+    background: #BCB3F7;
+    transition: background 250ms;
+}
+
+/* Div on order tracking page which contains a banner image */
+
+.bannerImage{
+    width: 100%;
+    background-image: url(imgs/donut.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 405px;
+}
+
+/* blur styling for the div inside the banner image div */
+
+.blur{
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+    height: 405px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* styling for the form within the blured div, within the bannerImage div */
+
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+input{
+    border-radius: 25px;
+    padding: .25em;
+    border: none;
+    text-align: center;
+}
+
+input:focus{
+    outline: none;
+    place
+}
+
+input:focus::placeholder{
+    color: transparent;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* styling on the button within the order tracking form -- same styling should be used for the place order form when this is being created, for 'changed my mind button' have the color fade from the oposite side and be a pastel red color  */
+
+button[type="submit"]{
+    background-color: #EFEFEF;
+    background: linear-gradient(to left, #EFEFEF 50%, #B3F7DE 50%) right;
+    background-size: 300%;
+    background-repeat: no-repeat;
+    transition: 500ms ease-out;
+    padding: 1em;
+    border: none;
+    border-radius: 25px;
+}
+
+button[type="submit"]:hover{
+    background-position: left;
+    transform: scale(1.1, 1.1);
+}
+
+button[type="submit"]:focus{
+    transform: scale(1, 1);
+    outline: none;
+}
+
+/* Styling for making the iframe responsive -- to center align an iframe you must have text-align: center; in the parent element */
+
+div.map{
+    text-align: center;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    padding-top: 25px;
+    height: 0;
+    
+}
+
+iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+/* Table styling for place order page */
+
+.tableImage{
+    background-image: url(imgs/Macroons.jpg);
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    height: 405px;
+    margin-bottom: 2em;
+}
+
+.tableBlur{
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+    height: 405px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+table{
+    width: 100%;
+    text-align: center;
+    color: black;
+}
+
+th,td{
+    border: 1px solid grey;
+    background: #B3F7DE; 
+}
+
+.orderForm{
+    padding: 3rem;
+    background-color: #EEF7B3;
+    border-radius: 15px;
+}
+
+select{
+    border-radius: 25px;
+    padding: .25em;
+    border: none;
+    text-align: center;
+}
+
+select:focus{
+    outline: none;
+}
+
+.formButtons{
+    margin-top: 1em;
+}
+
+/* Styling for the reset button */
+
+button[type="reset"]{
+    background-color: #EFEFEF;
+    background: linear-gradient(to right, #EFEFEF 50%, #f6797e 50%) left;
+    background-size: 300%;
+    background-repeat: no-repeat;
+    transition: 500ms ease-out;
+    padding: 1em;
+    border: none;
+    border-radius: 25px;
+    margin-left: 1em;
+}
+
+button[type="reset"]:hover{
+    background-position: right;
+    transform: scale(1.1, 1.1);
+}
+
+button[type="reset"]:focus{
+    transform: scale(1, 1);
+    outline: none;
+}
+
+
+.orderArea{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2em;
+}
+
+/* media query to reformat the main page to display in columns when below 992px */
+
+@media (max-width: 992px){
+.container, .orderArea{
+    display: flex;
+    flex-direction: column;
+}
+
+}
+
+/* * {
+    background: #000 !important;
+    color: #0f0 !important;
+    outline: solid #f00 1px !important;
+  } */
+
+
+
